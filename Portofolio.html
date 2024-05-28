@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portofolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="portofolio.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu-icon" onclick="toggleSidebar()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <a href="portofolio.html" class="menu-item">Home</a>
+                <a href="tentangSaya.html" class="menu-item">Tentang Saya</a>
+                <a href="pendidikan.html" class="menu-item">Pendidikan</a>
+                <a href="keahlian.html" class="menu-item">Keahlian</a>
+            </div>
+            <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+        </div>
+
+        <p class="isi">
+            Halo, perkenalkan saya<br /><span>Alek Hadyandra Kamal</span
+            ><br /><span id="status">Teknik Komputer dan Jaringan</span>
+        </p>
+        <script src="portofolio.js"></script>
+    </body>
+</html>
