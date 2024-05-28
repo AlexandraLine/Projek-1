@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1e23;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.sidebar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #1b1e23;
+    overflow-y: auto;
+    transition: top 0.5s;
+    padding-top: 60px;
+    z-index: 9;
+}
+
+.sidebar .menu-item {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar .menu-item:hover {
+    color: #f1f1f1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 8;
+    display: none;
+}
+
+.container.open .sidebar {
+    top: 0;
+}
+
+.container.open .overlay {
+    display: block;
+    opacity: 1;
+}
+
+.container.open .menu-icon div:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.container.open .menu-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+.container.open .menu-icon div:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.foto {
+    position: absolute;
+    width: 390px;
+    height: 430px;
+    left: 60px;
+    top: 80px;
+}
+
+.namaLengkap {
+    color: white;
+    position: absolute;
+    top: 500px;
+    left: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.deskripsi {
+    color: white;
+    position: absolute;
+    top: 540px;
+    left: 60px;
+    white-space: nowrap;
+    font-size: 17px;
+}
+
+.medsos {
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    top: 670px;
+    font-size: 25px;
+    left: 60px;
+}
+
+.fa-solid.fa-envelope {
+    color: white;
+    position: absolute;
+    top: 735px;
+    left: 60px;
+    font-size: 20px;
+}
+
+.linkEmail {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 737px;
+    left: 100px;
+}
+
+.fa-brands.fa-linkedin-in {
+    color: white;
+    position: absolute;
+    top: 770px;
+    left: 60px;
+    font-size: 23px;
+}
+
+.linkLinkedIn {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 774px;
+    left: 100px;
+}
+
+.fa-brands.fa-facebook-f {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 810px;
+    left: 68px;
+}
+
+.linkFacebook {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 812px;
+    left: 100px;
+}
+
+.fa-brands.fa-instagram {
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    top: 845px;
+    left: 61px;
+}
+
+.linkInstagram {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 848px;
+    left: 100px;
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url("Coolvetica.otf");
+}
+
+.fa-brands.fa-whatsapp {
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    top: 883px;
+    left: 61px;
+}
+
+.linkWa {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 887px;
+    left: 100px;
+}
+
+.fa-brands.fa-x-twitter {
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    top: 920px;
+    left: 58px;
+}
+
+.linkTwitter {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 923px;
+    left: 100px;
+}
