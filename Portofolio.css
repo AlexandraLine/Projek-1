@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1e23;
+    color: #fff;
+}
+
+@font-face {
+    font-family: header;
+    src: url(LostSignalRegular.otf);
+}
+
+@font-face {
+    font-family: hello;
+    src: url(Coolvetica.otf);
+}
+
+@font-face {
+    font-family: gb;
+    src: url(Goldbill.ttf);
+}
+
+.container {
+    position: relative;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.sidebar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #1b1e23;
+    overflow-y: auto;
+    transition: top 0.5s;
+    padding-top: 60px;
+    z-index: 9;
+}
+
+.sidebar .menu-item {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar .menu-item:hover {
+    color: #f1f1f1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 8;
+    display: none;
+}
+
+.container.open .sidebar {
+    top: 0;
+}
+
+.container.open .overlay {
+    display: block;
+    opacity: 1;
+}
+
+.container.open .menu-icon div:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.container.open .menu-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+.container.open .menu-icon div:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.isi {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 300px;
+    left: 16px;
+    font-family: gb;
+    font-weight: bold;
+}
+
+.isi span {
+    color: #ffb633;
+}
+
+#status {
+    color: white;
+}
+
+.fa-brands.fa-facebook-f {
+    color: white;
+    position: fixed;
+    top: 420px;
+    left: 25px;
+    font-size: 20px;
+}
