@@ -1,0 +1,43 @@
+/* portofolio.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navigation .menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation .menu-item:hover {
+    background-color: #555;
+}
+
+.isi {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.isi span {
+    font-weight: bold;
+    font-size: 1.2em;
+}

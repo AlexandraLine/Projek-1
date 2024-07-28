@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position Example</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background-color: lightblue;
+                border: 2px solid navy;
+            }
+            .static-box {
+                position: static;
+            }
+            .relative-box {
+                position: relative;
+                top: 20px;
+                left: 20px;
+            }
+            .absolute-box {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+            }
+            .fixed-box {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
+            .sticky-box {
+                position: sticky;
+                top: 0;
+                background-color: yellow;
+            }
+            .container {
+                height: 1000px; /* For scroll demonstration */
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box static-box">Static</div>
+            <div class="box relative-box">Relative</div>
+            <div class="box absolute-box">Absolute</div>
+            <div class="box fixed-box">Fixed</div>
+            <div class="box sticky-box">Sticky</div>
+        </div>
+        <div class="sosmed">
+            <div class="medsos">Media Sosial</div>
+            <div class="facebook">Facebook</div>
+            <div class="instagram">Instagram</div>
+        </div>
+    </body>
+</html>
